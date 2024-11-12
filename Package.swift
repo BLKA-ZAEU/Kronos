@@ -10,8 +10,8 @@ let package = Package(
         .target(
             name: "Kronos",
             path: "Sources",
-            resources: [.process("PrivacyInfo.xcprivacy")],
-            exclude: ["BUILD"]
+            exclude: ["BUILD"],
+            resources: [.process("PrivacyInfo.xcprivacy")]
         ),
         .testTarget(name: "KronosTests", dependencies: ["Kronos"]),
     ]
